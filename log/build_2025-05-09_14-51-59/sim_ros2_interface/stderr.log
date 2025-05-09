@@ -1,0 +1,14 @@
+/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/src/simExtROS2/src/sim_ros2_interface.cpp:906:21: warning: object backing the pointer will be destroyed at the end of the full-expression [-Wdangling-gsl]
+      auto &param = params_client->get_parameters({in->name}).front();
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/src/simExtROS2/src/sim_ros2_interface.cpp:915:21: warning: object backing the pointer will be destroyed at the end of the full-expression [-Wdangling-gsl]
+      auto &param = params_client->get_parameters({in->name}).front();
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/src/simExtROS2/src/sim_ros2_interface.cpp:924:21: warning: object backing the pointer will be destroyed at the end of the full-expression [-Wdangling-gsl]
+      auto &param = params_client->get_parameters({in->name}).front();
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/src/simExtROS2/src/sim_ros2_interface.cpp:933:21: warning: object backing the pointer will be destroyed at the end of the full-expression [-Wdangling-gsl]
+      auto &param = params_client->get_parameters({in->name}).front();
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+ld: warning: -pie being ignored. It is only used when linking a main executable

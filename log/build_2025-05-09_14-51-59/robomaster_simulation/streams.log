@@ -1,0 +1,115 @@
+[0.016s] Invoking command in '/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation': CONDA_PROMPT_MODIFIER=(base) PIXI_PROMPT=(robotics-lab-usi-robomaster) SHLVL=3 _=/usr/bin/env /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/cmake /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/src/robomaster_sim -DCMAKE_INSTALL_PREFIX=/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/robomaster_simulation
+[4.202s] -- The CXX compiler identification is Clang 16.0.1
+[4.268s] -- Detecting CXX compiler ABI info
+[4.552s] -- Detecting CXX compiler ABI info - done
+[4.556s] -- Check for working CXX compiler: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/arm64-apple-darwin20.0.0-clang++ - skipped
+[4.556s] -- Detecting CXX compile features
+[4.557s] -- Detecting CXX compile features - done
+[4.731s] -- Found Boost: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/lib/cmake/Boost-1.78.0/BoostConfig.cmake (found version "1.78.0") found components: system thread 
+[4.755s] -- Found Threads: TRUE  
+[4.831s] -- CoppeliaSim: COPPELIASIM_INCLUDE_DIR: /Applications/coppeliaSim.app/Contents/Resources/programming/include
+[4.831s] -- CoppeliaSim: COPPELIASIM_ROOT_DIR: /Applications/coppeliaSim.app/Contents/Resources
+[4.832s] -- Checking CoppeliaSim header version...
+[5.656s] -- CoppeliaSim headers version 4.7.0 rev4
+[5.656s] -- CoppeliaSim: COPPELIASIM_RESOURCES_DIR: /Applications/coppeliaSim.app/Contents/Resources
+[5.656s] -- CoppeliaSim: COPPELIASIM_PLUGINS_DIR: /Applications/coppeliaSim.app/Contents/MacOS
+[5.656s] -- CoppeliaSim: COPPELIASIM_EXECUTABLES_DIR: /Applications/coppeliaSim.app/Contents/MacOS
+[5.656s] -- CoppeliaSim: COPPELIASIM_LIBRARIES_DIR: /Applications/coppeliaSim.app/Contents/Frameworks
+[5.656s] -- CoppeliaSim: COPPELIASIM_ADDONS_DIR: /Applications/coppeliaSim.app/Contents/Resources/addOns
+[5.656s] -- CoppeliaSim: COPPELIASIM_MANUAL_DIR: /Applications/coppeliaSim.app/Contents/Resources/manual
+[5.656s] -- CoppeliaSim: COPPELIASIM_MODELS_DIR: /Applications/coppeliaSim.app/Contents/Resources/models
+[5.656s] -- CoppeliaSim: COPPELIASIM_SCENES_DIR: /Applications/coppeliaSim.app/Contents/Resources/scenes
+[5.656s] -- CoppeliaSim: COPPELIASIM_LUA_DIR: /Applications/coppeliaSim.app/Contents/Resources/lua
+[5.656s] -- CoppeliaSim: COPPELIASIM_PYTHON_DIR: /Applications/coppeliaSim.app/Contents/Resources/python
+[5.656s] -- CoppeliaSim: COPPELIASIM_EXECUTABLE: /Applications/coppeliaSim.app/Contents/MacOS/coppeliaSim
+[5.663s] -- Found Boost: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/lib/cmake/Boost-1.78.0/BoostConfig.cmake (found version "1.78.0") found components: regex 
+[5.676s] -- Found Git: /opt/homebrew/bin/git (found version "2.46.2") 
+[5.683s] -- Adding simStubsGen command...
+[6.062s] -- Found Python3: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/python3.10 (found version "3.10.13") found components: Interpreter 
+[6.062s] -- Reading plugin metadata...
+[6.722s] -- Plugin: simRobomaster
+[6.723s] -- Configuring done (5.0s)
+[6.755s] -- Generating done (0.0s)
+[6.759s] -- Build files have been written to: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation
+[6.760s] Invoked command in '/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation' returned '0': CONDA_PROMPT_MODIFIER=(base) PIXI_PROMPT=(robotics-lab-usi-robomaster) SHLVL=3 _=/usr/bin/env /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/cmake /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/src/robomaster_sim -DCMAKE_INSTALL_PREFIX=/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/robomaster_simulation
+[6.763s] Invoking command in '/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation': CONDA_PROMPT_MODIFIER=(base) PIXI_PROMPT=(robotics-lab-usi-robomaster) SHLVL=3 _=/usr/bin/env /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/cmake --build /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation -- -j12 -l12
+[6.873s] [  2%] Building CXX object CMakeFiles/robot.dir/src/robot/action.cpp.o
+[6.889s] [  4%] Building CXX object CMakeFiles/robomaster.dir/src/robot/gimbal.cpp.o
+[6.889s] [  6%] Building CXX object CMakeFiles/robomaster.dir/src/robot/chassis.cpp.o
+[6.889s] [ 11%] Building CXX object CMakeFiles/robot.dir/src/robot/arm.cpp.o
+[6.889s] [ 11%] Building CXX object CMakeFiles/robomaster.dir/src/robot/action.cpp.o
+[6.889s] [ 13%] Building CXX object CMakeFiles/robot.dir/src/robot/led.cpp.o
+[6.889s] [ 16%] Building CXX object CMakeFiles/test_encoder.dir/src/encoder.cpp.o
+[6.893s] [ 18%] Building CXX object CMakeFiles/robot.dir/src/robot/gimbal.cpp.o
+[6.894s] [ 23%] Building CXX object CMakeFiles/robomaster.dir/src/robot/led.cpp.o
+[6.894s] [ 23%] Building CXX object CMakeFiles/robot.dir/src/robot/chassis.cpp.o
+[6.895s] [ 27%] Building CXX object CMakeFiles/test_encoder.dir/src/test_encoder.cpp.o
+[6.895s] [ 27%] Building CXX object CMakeFiles/robomaster.dir/src/robot/arm.cpp.o
+[8.051s] [ 30%] Building CXX object CMakeFiles/robot.dir/src/robot/robot.cpp.o
+[8.059s] [ 32%] Building CXX object CMakeFiles/robomaster.dir/src/robot/robot.cpp.o
+[8.112s] [ 34%] Building CXX object CMakeFiles/robomaster.dir/src/robot/vision.cpp.o
+[8.170s] [ 37%] Building CXX object CMakeFiles/robomaster.dir/src/robomaster.cpp.o
+[8.360s] [ 39%] Building CXX object CMakeFiles/robot.dir/src/robot/vision.cpp.o
+[8.421s] [ 41%] Building CXX object CMakeFiles/robomaster.dir/src/server.cpp.o
+[9.309s] [ 44%] Building CXX object CMakeFiles/robomaster.dir/src/command.cpp.o
+[9.592s] [ 46%] Building CXX object CMakeFiles/robomaster.dir/src/connection.cpp.o
+[9.827s] [ 48%] Building CXX object CMakeFiles/robomaster.dir/src/dummy_robot.cpp.o
+[10.112s] [ 51%] Linking CXX executable test_encoder
+[10.211s] [ 51%] Built target test_encoder
+[10.242s] [ 53%] Building CXX object CMakeFiles/robomaster.dir/src/rt_dummy_robot.cpp.o
+[10.279s] [ 55%] Building CXX object CMakeFiles/robomaster.dir/src/protocol.cpp.o
+[10.417s] [ 58%] Building CXX object CMakeFiles/robomaster.dir/src/topic.cpp.o
+[10.563s] [ 60%] Building CXX object CMakeFiles/robomaster.dir/src/encoder.cpp.o
+[10.751s] [ 62%] Building CXX object CMakeFiles/robomaster.dir/src/streamer.cpp.o
+[12.319s] [ 65%] Linking CXX static library librobot.a
+[12.942s] [ 65%] Built target robot
+[17.479s] [ 67%] Building CXX object CMakeFiles/robomaster.dir/src/discovery.cpp.o
+[19.954s] [ 69%] Linking CXX static library librobomaster.a
+[20.018s] [ 69%] Built target robomaster
+[20.054s] [ 72%] Building CXX object CMakeFiles/test_robot.dir/src/test_robot.cpp.o
+[21.621s] [ 74%] Building CXX object CMakeFiles/test_robot.dir/src/dummy_robot.cpp.o
+[23.209s] [ 76%] Linking CXX executable test_robot
+[23.278s] [ 76%] Built target test_robot
+[23.297s] [ 79%] Generating generated/stubs.cpp, generated/stubs.h, generated/plugin.h, generated/stubsPlusPlus.cpp, generated/index.json, generated/reference.html, generated/typecheck.lua
+[25.420s] /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/generate.py --verbose --xml-file /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation/coppeliaSim_plugin/callbacks.xml --gen-all /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation/coppeliaSim_plugin/generated --lua-file /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/src/robomaster_sim/coppeliaSim_plugin/simRobomaster.lua
+[25.420s] /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/python3.10 /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/generate_lua_xml.py /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation/coppeliaSim_plugin/callbacks.xml /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/src/robomaster_sim/coppeliaSim_plugin/simRobomaster.lua /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation/coppeliaSim_plugin/generated/lua.xml
+[25.420s] /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/python3.10 /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/merge_xml.py /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation/coppeliaSim_plugin/callbacks.xml /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation/coppeliaSim_plugin/generated/lua.xml /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation/coppeliaSim_plugin/generated/reference.xml
+[25.420s] xsltproc -o /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation/coppeliaSim_plugin/generated/reference.html /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/xsl/reference.xsl /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation/coppeliaSim_plugin/generated/reference.xml
+[25.420s] /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/python3.10 /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/generate_lua_typechecker.py /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation/coppeliaSim_plugin/callbacks.xml /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/src/robomaster_sim/coppeliaSim_plugin/simRobomaster.lua /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation/coppeliaSim_plugin/generated/lua.xml /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation/coppeliaSim_plugin/generated/typecheck.lua
+[25.421s] /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/python3.10 /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/generate_api_index.py /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation/coppeliaSim_plugin/generated/reference.xml /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation/coppeliaSim_plugin/generated/index.json
+[25.421s] /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/python3.10 /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/generate_ce.py /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation/coppeliaSim_plugin/generated/reference.xml /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation/coppeliaSim_plugin/generated/ce.lua
+[25.421s] /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/python3.10 /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/external/pycpp/pycpp.py -p xml_file=/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation/coppeliaSim_plugin/callbacks.xml -P /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen -i /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/cpp/stubs.cpp -o /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation/coppeliaSim_plugin/generated/stubs.cpp
+[25.421s] /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/python3.10 /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/external/pycpp/pycpp.py -p xml_file=/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation/coppeliaSim_plugin/callbacks.xml -P /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen -i /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/cpp/stubs.h -o /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation/coppeliaSim_plugin/generated/stubs.h
+[25.421s] /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/python3.10 /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/external/pycpp/pycpp.py -p xml_file=/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation/coppeliaSim_plugin/callbacks.xml -P /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen -i /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/cpp/plugin.h -o /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation/coppeliaSim_plugin/generated/plugin.h
+[25.421s] /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/python3.10 /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/external/pycpp/pycpp.py -p xml_file=/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation/coppeliaSim_plugin/callbacks.xml -P /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen -i /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/cpp/stubsPlusPlus.cpp -o /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation/coppeliaSim_plugin/generated/stubsPlusPlus.cpp
+[25.529s] [ 81%] Building CXX object coppeliaSim_plugin/CMakeFiles/simRobomaster.dir/Applications/coppeliaSim.app/Contents/Resources/programming/include/simLib/simLib.cpp.o
+[25.891s] [ 83%] Building CXX object coppeliaSim_plugin/CMakeFiles/simRobomaster.dir/coppeliasim_robot.cpp.o
+[27.882s] [ 86%] Building CXX object coppeliaSim_plugin/CMakeFiles/simRobomaster.dir/plugin.cpp.o
+[30.815s] [ 88%] Building CXX object coppeliaSim_plugin/CMakeFiles/simRobomaster.dir/Applications/coppeliaSim.app/Contents/Resources/programming/include/simPlusPlus/Plugin.cpp.o
+[31.232s] [ 90%] Building CXX object coppeliaSim_plugin/CMakeFiles/simRobomaster.dir/Applications/coppeliaSim.app/Contents/Resources/programming/include/simPlusPlus/Lib.cpp.o
+[32.779s] [ 93%] Building CXX object coppeliaSim_plugin/CMakeFiles/simRobomaster.dir/generated/stubs.cpp.o
+[34.877s] [ 95%] Linking CXX shared library libsimRobomaster.dylib
+[34.914s] ld: warning: -pie being ignored. It is only used when linking a main executable
+[34.952s] ld: warning: direct access in function 'Robot::get_action_state(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)' from file 'CMakeFiles/simRobomaster.dir/plugin.cpp.o' to global weak symbol 'std::__1::piecewise_construct' from file '../librobomaster.a(robot.cpp.o)' means the weak symbol cannot be overridden at runtime. This was likely caused by different translation units being compiled with different visibility settings.
+[34.952s] ld: warning: direct access in function 'Robot::get_action_state(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)' from file 'CMakeFiles/simRobomaster.dir/plugin.cpp.o' to global weak symbol 'std::__1::piecewise_construct' from file '../librobomaster.a(robot.cpp.o)' means the weak symbol cannot be overridden at runtime. This was likely caused by different translation units being compiled with different visibility settings.
+[34.952s] ld: warning: direct access in function 'Robot::get_action_state(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)' from file 'CMakeFiles/simRobomaster.dir/plugin.cpp.o' to global weak symbol 'std::__1::piecewise_construct' from file '../librobomaster.a(robot.cpp.o)' means the weak symbol cannot be overridden at runtime. This was likely caused by different translation units being compiled with different visibility settings.
+[34.952s] ld: warning: direct access in function 'Robot::get_action_state(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)' from file 'CMakeFiles/simRobomaster.dir/plugin.cpp.o' to global weak symbol 'std::__1::piecewise_construct' from file '../librobomaster.a(robot.cpp.o)' means the weak symbol cannot be overridden at runtime. This was likely caused by different translation units being compiled with different visibility settings.
+[34.952s] ld: warning: direct access in function 'CoppeliaSimRobot::detect_bounding_boxes(unsigned char const*, int, int, unsigned char) const' from file 'CMakeFiles/simRobomaster.dir/coppeliasim_robot.cpp.o' to global weak symbol 'std::__1::piecewise_construct' from file '../librobomaster.a(robot.cpp.o)' means the weak symbol cannot be overridden at runtime. This was likely caused by different translation units being compiled with different visibility settings.
+[34.953s] ld: warning: direct access in function 'CoppeliaSimRobot::detect_bounding_boxes(unsigned char const*, int, int, unsigned char) const' from file 'CMakeFiles/simRobomaster.dir/coppeliasim_robot.cpp.o' to global weak symbol 'std::__1::piecewise_construct' from file '../librobomaster.a(robot.cpp.o)' means the weak symbol cannot be overridden at runtime. This was likely caused by different translation units being compiled with different visibility settings.
+[34.978s] [ 95%] Built target simRobomaster
+[35.014s] [ 97%] Building CXX object CMakeFiles/test.dir/src/test.cpp.o
+[37.280s] [100%] Linking CXX executable test
+[37.364s] [100%] Built target test
+[37.379s] Invoked command in '/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation' returned '0': CONDA_PROMPT_MODIFIER=(base) PIXI_PROMPT=(robotics-lab-usi-robomaster) SHLVL=3 _=/usr/bin/env /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/cmake --build /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation -- -j12 -l12
+[37.736s] Invoking command in '/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation': CONDA_PROMPT_MODIFIER=(base) PIXI_PROMPT=(robotics-lab-usi-robomaster) SHLVL=3 _=/usr/bin/env /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/cmake --install /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation
+[37.745s] -- Install configuration: ""
+[37.745s] -- Installing: /Applications/coppeliaSim.app/Contents/Resources/lua/simRobomaster-typecheck.lua
+[37.747s] -- Installing: /Applications/coppeliaSim.app/Contents/Resources/lua/simRobomaster.lua
+[37.749s] -- Installing: /Applications/coppeliaSim.app/Contents/Resources/manual/en/simRobomaster.htm
+[37.750s] -- Installing: /Applications/coppeliaSim.app/Contents/Resources/manual/index/simRobomaster.json
+[37.750s] -- Installing: /Applications/coppeliaSim.app/Contents/Resources/lua/simRobomaster-ce.lua
+[37.750s] -- Installing: /Applications/coppeliaSim.app/Contents/MacOS/libsimRobomaster.dylib
+[37.753s] -- Installing: /Applications/coppeliaSim.app/Contents/Resources/models/robots/mobile/RoboMasterEP.ttm
+[37.761s] -- Installing: /Applications/coppeliaSim.app/Contents/Resources/models/robots/mobile/RoboMasterS1.ttm
+[37.767s] -- Installing: /Applications/coppeliaSim.app/Contents/Resources/models/components/sensors/RoboMasterDistanceSensor.ttm
+[37.771s] Invoked command in '/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation' returned '0': CONDA_PROMPT_MODIFIER=(base) PIXI_PROMPT=(robotics-lab-usi-robomaster) SHLVL=3 _=/usr/bin/env /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/cmake --install /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_simulation

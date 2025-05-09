@@ -1,0 +1,24 @@
+[0.019s] Invoking command in '/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/robomaster_example:/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/robomaster_ros CONDA_PROMPT_MODIFIER=(base) PIXI_PROMPT=(robotics-lab-usi-robomaster) SHLVL=3 _=/usr/bin/env /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/cmake --build /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_msgs -- -j12 -l12
+[0.130s] [  0%] Built target robomaster_msgs__cpp
+[0.135s] [  0%] Built target ament_cmake_python_symlink_robomaster_msgs
+[0.146s] [ 12%] Built target robomaster_msgs__rosidl_generator_c
+[0.223s] [ 25%] Built target robomaster_msgs__rosidl_typesupport_introspection_c
+[0.238s] [ 38%] Built target robomaster_msgs__rosidl_typesupport_c
+[0.270s] [ 50%] Built target robomaster_msgs__rosidl_typesupport_cpp
+[0.275s] [ 63%] Built target robomaster_msgs__rosidl_typesupport_introspection_cpp
+[0.302s] [ 77%] Built target robomaster_msgs__rosidl_typesupport_fastrtps_cpp
+[0.302s] [ 88%] Built target robomaster_msgs__rosidl_typesupport_fastrtps_c
+[0.344s] [ 88%] Built target robomaster_msgs
+[0.385s] [ 88%] Built target robomaster_msgs__py
+[0.448s] [100%] Built target robomaster_msgs__rosidl_generator_py
+[0.494s] [100%] Built target robomaster_msgs__rosidl_typesupport_introspection_c__pyext
+[0.494s] [100%] Built target robomaster_msgs__rosidl_typesupport_c__pyext
+[0.494s] [100%] Built target robomaster_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.519s] running egg_info
+[0.550s] writing robomaster_msgs.egg-info/PKG-INFO
+[0.574s] writing dependency_links to robomaster_msgs.egg-info/dependency_links.txt
+[0.712s] writing top-level names to robomaster_msgs.egg-info/top_level.txt
+[0.754s] reading manifest file 'robomaster_msgs.egg-info/SOURCES.txt'
+[0.755s] writing manifest file 'robomaster_msgs.egg-info/SOURCES.txt'
+[0.780s] [100%] Built target ament_cmake_python_build_robomaster_msgs_egg
+[0.794s] Invoked command in '/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/robomaster_example:/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/robomaster_ros CONDA_PROMPT_MODIFIER=(base) PIXI_PROMPT=(robotics-lab-usi-robomaster) SHLVL=3 _=/usr/bin/env /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/cmake --build /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_msgs -- -j12 -l12

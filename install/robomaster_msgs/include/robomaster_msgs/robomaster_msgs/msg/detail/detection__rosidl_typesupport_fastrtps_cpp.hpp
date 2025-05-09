@@ -1,0 +1,1 @@
+/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_msgs/rosidl_typesupport_fastrtps_cpp/robomaster_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_cpp.hpp

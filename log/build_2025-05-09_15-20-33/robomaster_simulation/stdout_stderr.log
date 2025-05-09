@@ -1,0 +1,11 @@
+-- Found Boost: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/lib/cmake/Boost-1.78.0/BoostConfig.cmake (found version "1.78.0") found components: system thread 
+-- CoppeliaSim: COPPELIASIM_INCLUDE_DIR: /Applications/coppeliaSim.app/Contents/Resources/programming/include
+-- Configuring incomplete, errors occurred!
+CMake Error at /Applications/coppeliaSim.app/Contents/Resources/programming/include/cmake/FindCoppeliaSim.cmake:17 (message):
+  The specified COPPELIASIM_ROOT_DIR (/path/to/coppeliasim) does not exist
+Call Stack (most recent call first):
+  /Applications/coppeliaSim.app/Contents/Resources/programming/include/cmake/FindCoppeliaSim.cmake:52 (coppeliasim_find_error)
+  coppeliaSim_plugin/CMakeLists.txt:22 (find_package)
+
+
+make: *** [Makefile:865: cmake_check_build_system] Error 1

@@ -1,0 +1,6 @@
+ld: library not found for -lsimVision
+clang-16: error: linker command failed with exit code 1 (use -v to see invocation)
+make[2]: *** [CMakeFiles/test_robot.dir/build.make:116: test_robot] Error 1
+make[1]: *** [CMakeFiles/Makefile2:134: CMakeFiles/test_robot.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:136: all] Error 2

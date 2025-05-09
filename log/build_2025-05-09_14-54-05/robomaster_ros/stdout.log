@@ -1,0 +1,21 @@
+running develop
+running egg_info
+writing robomaster_ros.egg-info/PKG-INFO
+writing dependency_links to robomaster_ros.egg-info/dependency_links.txt
+writing entry points to robomaster_ros.egg-info/entry_points.txt
+writing requirements to robomaster_ros.egg-info/requires.txt
+writing top-level names to robomaster_ros.egg-info/top_level.txt
+reading manifest file 'robomaster_ros.egg-info/SOURCES.txt'
+writing manifest file 'robomaster_ros.egg-info/SOURCES.txt'
+running build_ext
+Creating /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/robomaster_ros/lib/python3.10/site-packages/robomaster-ros.egg-link (link to .)
+Installing connect script to /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/robomaster_ros/lib/robomaster_ros
+Installing discover script to /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/robomaster_ros/lib/robomaster_ros
+Installing display_battery script to /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/robomaster_ros/lib/robomaster_ros
+Installing h264_decoder script to /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/robomaster_ros/lib/robomaster_ros
+Installing play_audio script to /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/robomaster_ros/lib/robomaster_ros
+Installing play_opus script to /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/robomaster_ros/lib/robomaster_ros
+Installing robomaster_driver script to /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/robomaster_ros/lib/robomaster_ros
+
+Installed /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_ros
+running symlink_data

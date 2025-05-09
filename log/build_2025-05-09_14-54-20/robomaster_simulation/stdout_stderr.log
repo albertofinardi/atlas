@@ -1,0 +1,16 @@
+[  6%] Built target test_encoder
+[ 25%] Built target robot
+[ 69%] Built target robomaster
+[ 76%] Built target test_robot
+[ 81%] Built target test
+[100%] Built target simRobomaster
+-- Install configuration: ""
+-- Up-to-date: /Applications/coppeliaSim.app/Contents/Resources/lua/simRobomaster-typecheck.lua
+-- Up-to-date: /Applications/coppeliaSim.app/Contents/Resources/lua/simRobomaster.lua
+-- Up-to-date: /Applications/coppeliaSim.app/Contents/Resources/manual/en/simRobomaster.htm
+-- Up-to-date: /Applications/coppeliaSim.app/Contents/Resources/manual/index/simRobomaster.json
+-- Up-to-date: /Applications/coppeliaSim.app/Contents/Resources/lua/simRobomaster-ce.lua
+-- Up-to-date: /Applications/coppeliaSim.app/Contents/MacOS/libsimRobomaster.dylib
+-- Up-to-date: /Applications/coppeliaSim.app/Contents/Resources/models/robots/mobile/RoboMasterEP.ttm
+-- Up-to-date: /Applications/coppeliaSim.app/Contents/Resources/models/robots/mobile/RoboMasterS1.ttm
+-- Up-to-date: /Applications/coppeliaSim.app/Contents/Resources/models/components/sensors/RoboMasterDistanceSensor.ttm

@@ -1,0 +1,142 @@
+-- The C compiler identification is Clang 16.0.1
+-- The CXX compiler identification is Clang 16.0.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/arm64-apple-darwin20.0.0-clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/arm64-apple-darwin20.0.0-clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.3 (/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/share/ament_cmake/cmake)
+-- Found Python3: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/python3.10 (found version "3.10.13") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_cmake_ros: 0.10.0 (/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/share/ament_cmake_ros/cmake)
+-- Found geometry_msgs: 4.2.3 (/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/share/geometry_msgs/cmake)
+-- Found rosidl_generator_c: 3.1.4 (/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.4 (/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.4 (/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found sensor_msgs: 4.2.3 (/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/share/sensor_msgs/cmake)
+-- Found rclcpp: 16.0.3 (/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/share/rclcpp/cmake)
+-- Checking for module 'yaml-0.1'
+--   Found yaml-0.1, version 0.2.5
+-- Found rmw_implementation_cmake: 6.1.1 (/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 1.3.4 (/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found rclcpp_action: 16.0.3 (/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/share/rclcpp_action/cmake)
+-- Found tf2_ros: 0.25.2 (/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/share/tf2_ros/cmake)
+-- Found image_transport: 3.1.5 (/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/share/image_transport/cmake)
+-- Found TinyXML2 via Config file: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/lib/cmake/tinyxml2
+-- CoppeliaSim: COPPELIASIM_INCLUDE_DIR: /Applications/coppeliaSim.app/Contents/Resources/programming/include
+-- CoppeliaSim: COPPELIASIM_ROOT_DIR: /Applications/coppeliaSim.app/Contents/Resources
+-- Checking CoppeliaSim header version...
+-- CoppeliaSim headers version 4.7.0 rev4
+-- CoppeliaSim: COPPELIASIM_RESOURCES_DIR: /Applications/coppeliaSim.app/Contents/Resources
+-- CoppeliaSim: COPPELIASIM_PLUGINS_DIR: /Applications/coppeliaSim.app/Contents/MacOS
+-- CoppeliaSim: COPPELIASIM_EXECUTABLES_DIR: /Applications/coppeliaSim.app/Contents/MacOS
+-- CoppeliaSim: COPPELIASIM_LIBRARIES_DIR: /Applications/coppeliaSim.app/Contents/Frameworks
+-- CoppeliaSim: COPPELIASIM_ADDONS_DIR: /Applications/coppeliaSim.app/Contents/Resources/addOns
+-- CoppeliaSim: COPPELIASIM_MANUAL_DIR: /Applications/coppeliaSim.app/Contents/Resources/manual
+-- CoppeliaSim: COPPELIASIM_MODELS_DIR: /Applications/coppeliaSim.app/Contents/Resources/models
+-- CoppeliaSim: COPPELIASIM_SCENES_DIR: /Applications/coppeliaSim.app/Contents/Resources/scenes
+-- CoppeliaSim: COPPELIASIM_LUA_DIR: /Applications/coppeliaSim.app/Contents/Resources/lua
+-- CoppeliaSim: COPPELIASIM_PYTHON_DIR: /Applications/coppeliaSim.app/Contents/Resources/python
+-- CoppeliaSim: COPPELIASIM_EXECUTABLE: /Applications/coppeliaSim.app/Contents/MacOS/coppeliaSim
+-- Found Boost: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/lib/cmake/Boost-1.78.0/BoostConfig.cmake (found version "1.78.0") found components: regex 
+-- Found Git: /opt/homebrew/bin/git (found version "2.46.2") 
+-- Found Python3: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/python3.10 (found version "3.10.13") found components: Interpreter Development Development.Module Development.Embed 
+-- Found Boost: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/lib/cmake/Boost-1.78.0/BoostConfig.cmake (found version "1.78.0")  
+-- Found example_interfaces: 0.9.3 (/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/share/example_interfaces/cmake)
+-- Found nav_msgs: 4.2.3 (/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/share/nav_msgs/cmake)
+-- Found std_srvs: 4.2.3 (/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/share/std_srvs/cmake)
+-- Found trajectory_msgs: 4.2.3 (/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/share/trajectory_msgs/cmake)
+-- Found shape_msgs: 4.2.3 (/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/share/shape_msgs/cmake)
+-- Adding simStubsGen command...
+-- Found Python3: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/python3.10 (found version "3.10.13") found components: Interpreter 
+-- Reading plugin metadata...
+-- Plugin: simROS2
+-- Configuring done (9.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/sim_ros2_interface
+[  2%] Generating generated/actcli_cancelLastGoal.cpp
+[  5%] Generating generated/actsrv_action_succeed.cpp
+[  7%] Generating generated/actsrv_del.cpp
+[ 10%] Generating generated/actsrv_new.cpp
+[ 12%] Generating generated/callbacks.cpp
+[ 15%] Generating generated/callbacks.h
+[ 17%] Generating generated/cli_call.cpp
+[ 20%] Generating generated/cli_del.cpp
+[ 22%] Generating generated/cli_new.cpp
+[ 25%] Generating generated/cli_wait.cpp
+[ 27%] Generating generated/if_const.cpp
+[ 30%] Generating generated/if_list.cpp
+[ 32%] Generating generated/if_new.cpp
+[ 35%] Generating generated/pub_del.cpp
+[ 37%] Generating generated/pub_new.cpp
+[ 40%] Generating generated/pub_publish.cpp
+[ 42%] Generating generated/srv_del.cpp
+[ 45%] Generating generated/srv_new.cpp
+[ 47%] Generating generated/sub_del.cpp
+[ 50%] Generating generated/sub_new.cpp
+[ 52%] Generating generated/actsrv_action_publish_feedback.cpp
+[ 55%] Generating generated/actsrv_action_is_executing.cpp
+[ 57%] Generating generated/actsrv_action_is_canceling.cpp
+[ 60%] Generating generated/actsrv_action_is_active.cpp
+[ 62%] Generating generated/actsrv_action_execute.cpp
+[ 65%] Generating generated/actsrv_action_canceled.cpp
+[ 67%] Generating generated/actsrv_action_abort.cpp
+[ 70%] Generating generated/actcli_sendGoal.cpp
+[ 72%] Generating generated/actcli_new.cpp
+[ 75%] Generating generated/actcli_del.cpp
+[ 75%] Built target generate_ros_code
+[ 77%] Generating generated/stubs.cpp, generated/stubs.h, generated/plugin.h, generated/stubsPlusPlus.cpp, generated/index.json, generated/reference.html, generated/typecheck.lua
+/Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/generate.py --verbose --xml-file /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/src/simExtROS2/meta/callbacks.xml --gen-all /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/sim_ros2_interface/generated --lua-file /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/src/simExtROS2/lua/simROS2.lua
+/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/python3.10 /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/generate_lua_xml.py /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/src/simExtROS2/meta/callbacks.xml /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/src/simExtROS2/lua/simROS2.lua /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/sim_ros2_interface/generated/lua.xml
+/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/python3.10 /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/merge_xml.py /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/src/simExtROS2/meta/callbacks.xml /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/sim_ros2_interface/generated/lua.xml /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/sim_ros2_interface/generated/reference.xml
+xsltproc -o /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/sim_ros2_interface/generated/reference.html /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/xsl/reference.xsl /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/sim_ros2_interface/generated/reference.xml
+/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/python3.10 /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/generate_lua_typechecker.py /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/src/simExtROS2/meta/callbacks.xml /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/src/simExtROS2/lua/simROS2.lua /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/sim_ros2_interface/generated/lua.xml /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/sim_ros2_interface/generated/typecheck.lua
+/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/python3.10 /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/generate_api_index.py /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/sim_ros2_interface/generated/reference.xml /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/sim_ros2_interface/generated/index.json
+/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/python3.10 /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/generate_ce.py /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/sim_ros2_interface/generated/reference.xml /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/sim_ros2_interface/generated/ce.lua
+/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/python3.10 /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/external/pycpp/pycpp.py -p xml_file=/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/src/simExtROS2/meta/callbacks.xml -P /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen -i /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/cpp/stubs.cpp -o /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/sim_ros2_interface/generated/stubs.cpp
+/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/python3.10 /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/external/pycpp/pycpp.py -p xml_file=/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/src/simExtROS2/meta/callbacks.xml -P /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen -i /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/cpp/stubs.h -o /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/sim_ros2_interface/generated/stubs.h
+/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/python3.10 /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/external/pycpp/pycpp.py -p xml_file=/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/src/simExtROS2/meta/callbacks.xml -P /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen -i /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/cpp/plugin.h -o /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/sim_ros2_interface/generated/plugin.h
+/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/.pixi/envs/default/bin/python3.10 /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/external/pycpp/pycpp.py -p xml_file=/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/src/simExtROS2/meta/callbacks.xml -P /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen -i /Applications/coppeliaSim.app/Contents/Resources/programming/include/simStubsGen/cpp/stubsPlusPlus.cpp -o /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/sim_ros2_interface/generated/stubsPlusPlus.cpp
+[ 80%] Building CXX object CMakeFiles/simROS2.dir/Applications/coppeliaSim.app/Contents/Resources/programming/include/simLib/simLib.cpp.o
+[ 82%] Building CXX object CMakeFiles/simROS2.dir/generated/callbacks.cpp.o
+[ 85%] Building CXX object CMakeFiles/simROS2.dir/src/ros_msg_builtin_io.cpp.o
+[ 87%] Building CXX object CMakeFiles/simROS2.dir/src/sim_ros2_interface.cpp.o
+[ 95%] Building CXX object CMakeFiles/simROS2.dir/generated/stubs.cpp.o
+[ 95%] Building CXX object CMakeFiles/simROS2.dir/Applications/coppeliaSim.app/Contents/Resources/programming/include/simPlusPlus/Lib.cpp.o
+[ 95%] Building CXX object CMakeFiles/simROS2.dir/Applications/coppeliaSim.app/Contents/Resources/programming/include/simPlusPlus/Plugin.cpp.o
+[ 97%] Linking CXX shared library libsimROS2.dylib
+[100%] Built target simROS2
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /Applications/coppeliaSim.app/Contents/Resources/lua/simROS2-typecheck.lua
+-- Symlinking: /Applications/coppeliaSim.app/Contents/Resources/lua/simROS2.lua
+-- Symlinking: /Applications/coppeliaSim.app/Contents/Resources/manual/en/simROS2.htm
+-- Symlinking: /Applications/coppeliaSim.app/Contents/Resources/manual/index/simROS2.json
+-- Symlinking: /Applications/coppeliaSim.app/Contents/Resources/lua/simROS2-ce.lua
+-- Symlinking: /Applications/coppeliaSim.app/Contents/MacOS/libsimROS2.dylib
+-- Symlinking: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/sim_ros2_interface/share/ament_index/resource_index/package_run_dependencies/sim_ros2_interface
+-- Symlinking: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/sim_ros2_interface/share/ament_index/resource_index/parent_prefix_path/sim_ros2_interface
+-- Symlinking: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/sim_ros2_interface/share/sim_ros2_interface/environment/ament_prefix_path.sh
+-- Symlinking: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/sim_ros2_interface/share/sim_ros2_interface/environment/ament_prefix_path.dsv
+-- Symlinking: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/sim_ros2_interface/share/sim_ros2_interface/environment/path.sh
+-- Symlinking: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/sim_ros2_interface/share/sim_ros2_interface/environment/path.dsv
+-- Symlinking: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/sim_ros2_interface/share/sim_ros2_interface/local_setup.bash
+-- Symlinking: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/sim_ros2_interface/share/sim_ros2_interface/local_setup.sh
+-- Symlinking: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/sim_ros2_interface/share/sim_ros2_interface/local_setup.zsh
+-- Symlinking: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/sim_ros2_interface/share/sim_ros2_interface/local_setup.dsv
+-- Symlinking: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/sim_ros2_interface/share/sim_ros2_interface/package.dsv
+-- Symlinking: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/sim_ros2_interface/share/ament_index/resource_index/packages/sim_ros2_interface
+-- Symlinking: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/sim_ros2_interface/share/sim_ros2_interface/cmake/sim_ros2_interfaceConfig.cmake
+-- Symlinking: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/sim_ros2_interface/share/sim_ros2_interface/cmake/sim_ros2_interfaceConfig-version.cmake
+-- Symlinking: /Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/install/sim_ros2_interface/share/sim_ros2_interface/package.xml

@@ -1,0 +1,1 @@
+/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_msgs/rosidl_typesupport_fastrtps_c/robomaster_msgs/msg/detail/gimbal_command__rosidl_typesupport_fastrtps_c.h
