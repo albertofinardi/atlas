@@ -1,8 +1,0 @@
-CMake Error at /Applications/coppeliaSim.app/Contents/Resources/programming/include/cmake/FindCoppeliaSim.cmake:17 (message):
-  The specified COPPELIASIM_ROOT_DIR (/path/to/coppeliasim) does not exist
-Call Stack (most recent call first):
-  /Applications/coppeliaSim.app/Contents/Resources/programming/include/cmake/FindCoppeliaSim.cmake:52 (coppeliasim_find_error)
-  coppeliaSim_plugin/CMakeLists.txt:22 (find_package)
-
-
-make: *** [Makefile:865: cmake_check_build_system] Error 1

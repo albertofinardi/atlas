@@ -1,1 +1,0 @@
-/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_msgs/ament_cmake_environment_hooks/pythonpath.sh

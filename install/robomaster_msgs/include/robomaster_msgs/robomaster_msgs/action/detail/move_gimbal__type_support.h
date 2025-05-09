@@ -1,1 +1,0 @@
-/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_msgs/rosidl_generator_c/robomaster_msgs/action/detail/move_gimbal__type_support.h

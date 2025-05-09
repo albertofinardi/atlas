@@ -1,1 +1,0 @@
-/Users/francescodevito/Documents/USI/Primo_Anno/Robotics/pinuccio/robotics-lab-usi-robomaster/build/robomaster_msgs/rosidl_typesupport_introspection_c/robomaster_msgs/msg/detail/region_of_interest__rosidl_typesupport_introspection_c.h
