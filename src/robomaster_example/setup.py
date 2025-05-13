@@ -26,7 +26,7 @@ setup(
     entry_points={
         'console_scripts': [
             'controller_node = robomaster_example.controller_node:main',
-            'line_detection_node = robomaster_example.line_detection_node:main'
+            'line_pid_node = robomaster_example.line_pid_node:main'
         ],
     },
 )

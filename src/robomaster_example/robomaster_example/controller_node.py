@@ -1,96 +1,107 @@
 import rclpy
 from rclpy.node import Node
-from transforms3d._gohlketransforms import euler_from_quaternion
-
-from geometry_msgs.msg import Twist, Pose
-from nav_msgs.msg import Odometry
-
+from geometry_msgs.msg import Twist
+from std_msgs.msg import Float32, Bool
 import sys
+
 
 class ControllerNode(Node):
     def __init__(self):
-        super().__init__('controller_node')
+        super().__init__('controller_controller')
         
-        # Create attributes to store odometry pose and velocity
-        self.odom_pose = None
-        self.odom_velocity = None
-                
-        # Create a publisher for the topic 'cmd_vel'
-        self.vel_publisher = self.create_publisher(Twist, 'cmd_vel', 10)
+        self.angular_velocity = 0.0
+        self.linear_velocity = 0.0
+        self.stop_line_detected = False
+        
+        self.vel_publisher = self.create_publisher(Twist, '/rm0/cmd_vel', 10)
+        
+        self.steering_subscriber = self.create_subscription(
+            Float32, '/line_pid/steering', self.steering_callback, 10)
+        
+        self.stop_line_subscriber = self.create_subscription(
+            Bool, '/line_pid/stop_line_detected', self.stop_line_callback, 10)
+        
+        # Controller parameters for high-speed operation
+        self.declare_parameter('linear_velocity', 1.0)
+        self.declare_parameter('no_line_timeout', 1.0) 
 
-        # Create a subscriber to the topic 'odom', which will call 
-        # self.odom_callback every time a message is received
-        self.odom_subscriber = self.create_subscription(Odometry, 'odom', self.odom_callback, 10)
+        self.linear_velocity = self.get_parameter('linear_velocity').value
         
-        # NOTE: we're using relative names to specify the topics (i.e., without a 
-        # leading /). ROS resolves relative names by concatenating them with the 
-        # namespace in which this node has been started, thus allowing us to 
-        # specify which RoboMaster should be controlled.
+        self.update_timer = None
         
+        self.last_control_update_time = None
+        
+        self.is_stopped = False
+        
+        self.get_logger().info('Controller Node initialized')
+    
     def start(self):
-        # Create and immediately start a timer that will regularly publish commands
-        self.timer = self.create_timer(1/60, self.update_callback)
+        self.update_timer = self.create_timer(1/30, self.update_callback)
+        self.is_stopped = False
+        self.get_logger().info('Controller Node started')
     
     def stop(self):
         # Set all velocities to zero
         cmd_vel = Twist()
         self.vel_publisher.publish(cmd_vel)
+        self.is_stopped = True
     
-    def odom_callback(self, msg):
-        self.odom_pose = msg.pose.pose
-        self.odom_valocity = msg.twist.twist
+    def steering_callback(self, msg):
+        self.angular_velocity = msg.data * 5
+        self.last_control_update_time = self.get_clock().now()
         
-        pose2d = self.pose3d_to_2d(self.odom_pose)
-        
-        self.get_logger().info(
-            "odometry: received pose (x: {:.2f}, y: {:.2f}, theta: {:.2f})".format(*pose2d),
-             throttle_duration_sec=0.5 # Throttle logging frequency to max 2Hz
-        )
+        self.get_logger().info(f'Received steering {msg.data:.2f}')
     
-    def pose3d_to_2d(self, pose3):
-        quaternion = (
-            pose3.orientation.x,
-            pose3.orientation.y,
-            pose3.orientation.z,
-            pose3.orientation.w
-        )
+    def stop_line_callback(self, msg):
+        self.stop_line_detected = msg.data
         
-        roll, pitch, yaw = euler_from_quaternion(quaternion)
+        if self.stop_line_detected:
+            self.stop() # Stop the robot if a stop line is detected
+    
+    def check_timeout(self):
+        """Check if we've lost control updates for too long"""
+        if self.last_control_update_time is None:
+            return True  # No control update received yet
+            
+        current_time = self.get_clock().now()
+        timeout_duration = self.get_parameter('no_line_timeout').value
         
-        pose2 = (
-            pose3.position.x,  # x position
-            pose3.position.y,  # y position
-            yaw                # theta orientation
-        )
-        
-        return pose2
-        
+        elapsed = (current_time - self.last_control_update_time).nanoseconds / 1e9
+        return elapsed > timeout_duration
+    
     def update_callback(self):
-        # Let's just set some hard-coded velocities in this example
-        cmd_vel = Twist() 
-        cmd_vel.linear.x  = 0.2 # [m/s]
-        cmd_vel.angular.z = 0.0 # [rad/s]
+        if self.is_stopped:
+            return
         
-        # Publish the command
-        self.vel_publisher.publish(cmd_vel)
+        cmd_vel = Twist()
+        
+        if self.check_timeout():
+            self.get_logger().warn('No control updates for too long, stopping robot')
+            self.stop()
+        else:
+            cmd_vel.linear.x = self.linear_velocity
+            cmd_vel.angular.z = self.angular_velocity
+            
+            self.get_logger().debug(
+                f'Control: linear={cmd_vel.linear.x:.2f}, angular={cmd_vel.angular.z:.2f}'
+            )
+            
+            self.vel_publisher.publish(cmd_vel)
 
 
 def main():
-    # Initialize the ROS client library
     rclpy.init(args=sys.argv)
     
-    # Create an instance of your node class
     node = ControllerNode()
     node.start()
     
-    # Keep processings events until someone manually shuts down the node
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
         pass
     
-    # Ensure the RoboMaster is stopped before exiting
     node.stop()
+    rclpy.shutdown()
 
 
 if __name__ == '__main__':
