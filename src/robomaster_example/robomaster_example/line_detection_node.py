@@ -55,7 +55,6 @@ class LineDetectionNode(Node):
         self.declare_parameter('stop_line_center_max', 0.6)
         
         # Parameter for camera orientation
-        self.declare_parameter('rotate_camera_90', False)  # Set to True if cameras are rotated 90°
         
         # For debugging: optionally publish processed images
         self.debug_images = self.get_parameter('debug_images').value
@@ -88,9 +87,8 @@ class LineDetectionNode(Node):
             if img_msg.encoding == 'rgb8':
                 cv_image = cv2.cvtColor(cv_image, cv2.COLOR_RGB2BGR)
             
-            # Check if we need to rotate the image
-            if self.get_parameter('rotate_camera_90').value:
-                cv_image = cv2.rotate(cv_image, cv2.ROTATE_90_COUNTERCLOCKWISE)
+            # Check if we need to rotate the image:
+            cv_image = cv2.rotate(cv_image, cv2.ROTATE_90_COUNTERCLOCKWISE)
             
             # Convert to grayscale
             gray = cv2.cvtColor(cv_image, cv2.COLOR_BGR2GRAY)
@@ -124,12 +122,7 @@ class LineDetectionNode(Node):
                         cy = int(M["m01"] / M["m00"])
                         
                         # Determine line position based on camera orientation
-                        if self.get_parameter('rotate_camera_90').value:
-                            # For vertical lines (camera rotated 90°), use y-coordinate
-                            line_position = cy / cv_image.shape[0]
-                        else:
-                            # For horizontal lines (default), use x-coordinate
-                            line_position = cx / cv_image.shape[1]
+                        line_position = cx / cv_image.shape[1]
                         
                         line_detected = True
                         
