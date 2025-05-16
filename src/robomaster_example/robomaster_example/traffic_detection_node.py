@@ -15,14 +15,14 @@ class TrafficDetectorNode(Node):
         
         self.subscription = self.create_subscription(
             Image,
-            '/rm0/camera/image_color',
+            'camera/image_color',
             self.camera_callback,
             10
         )
         
         self.marker_publisher = self.create_publisher(
             String,
-            '/traffic/id',
+            'traffic/id',
             10
         )
         
@@ -48,12 +48,12 @@ class TrafficDetectorNode(Node):
         if self.get_parameter('enable_debug_visualization').value:
             self.debug_image_publisher = self.create_publisher(
                 Image,
-                '/traffic/debug/overlay',
+                'traffic/debug/overlay',
                 10
             )
             self.processed_image_publisher = self.create_publisher(
                 Image,
-                '/traffic/debug/processed',
+                'traffic/debug/processed',
                 10
             )
             self.get_logger().info('Debug visualization enabled')

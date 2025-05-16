@@ -13,22 +13,24 @@ class ControllerNode(Node):
         self.linear_velocity = 0.0
         self.stop_line_detected = False
         
-        self.vel_publisher = self.create_publisher(Twist, '/rm0/cmd_vel', 10)
+        self.vel_publisher = self.create_publisher(Twist, 'cmd_vel', 10)
         
         self.steering_subscriber = self.create_subscription(
-            Float32, '/line_pid/steering', self.steering_callback, 10)
+            Float32, 'line_pid/steering', self.steering_callback, 10)
         
         self.stop_line_subscriber = self.create_subscription(
-            Bool, '/line_pid/stop_line_detected', self.stop_line_callback, 10)
+            Bool, 'line_pid/stop_line_detected', self.stop_line_callback, 10)
         
         # Controller parameters for high-speed operation
         self.declare_parameter('linear_velocity', 1.0)
         self.declare_parameter('no_line_timeout', 1.0) 
+        self.declare_parameter('startup_delay', 5.0)
 
         self.linear_velocity = self.get_parameter('linear_velocity').value
         
         self.update_timer = None
-        
+        self.startup_timer = None
+
         self.last_control_update_time = None
         
         self.is_stopped = False
@@ -36,9 +38,23 @@ class ControllerNode(Node):
         self.get_logger().info('Controller Node initialized')
     
     def start(self):
+        # First stop the robot
+        self.stop()
+        startup_delay = self.get_parameter('startup_delay').value
+        
+        # Create a one-shot timer for the startup delay
+        self.get_logger().info(f'Waiting {startup_delay} seconds before starting...')
+        self.startup_timer = self.create_timer(startup_delay, self.startup_complete_callback)
+        
+    def startup_complete_callback(self):
+        # Cancel the startup timer since it's a one-time event
+        self.startup_timer.cancel()
+        
+        # Create the regular update timer
         self.update_timer = self.create_timer(1/30, self.update_callback)
         self.is_stopped = False
-        self.get_logger().info('Controller Node started')
+        self.get_logger().info("Controller Node active.")
+    
     
     def stop(self):
         # Set all velocities to zero
@@ -49,8 +65,6 @@ class ControllerNode(Node):
     def steering_callback(self, msg):
         self.angular_velocity = msg.data * 5
         self.last_control_update_time = self.get_clock().now()
-        
-        self.get_logger().info(f'Received steering {msg.data:.2f}')
     
     def stop_line_callback(self, msg):
         self.stop_line_detected = msg.data
