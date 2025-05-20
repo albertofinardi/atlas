@@ -488,9 +488,10 @@ class TrafficDetectorNode(Node):
 def main(args=None):
     rclpy.init(args=args)
     node = TrafficDetectorNode()
-    rclpy.spin(node)
-    node.destroy_node()
-    rclpy.shutdown()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
 
 
 if __name__ == '__main__':

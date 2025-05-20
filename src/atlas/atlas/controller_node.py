@@ -193,9 +193,13 @@ class ControllerNode(Node):
 def main():
     rclpy.init(args=sys.argv)
     node = ControllerNode()
-    rclpy.spin(node)
-    node.destroy_node()
-    rclpy.shutdown()
+    node.start()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    
+    node.stop()
 
 
 if __name__ == '__main__':
