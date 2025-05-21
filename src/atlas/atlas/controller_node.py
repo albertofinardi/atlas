@@ -36,6 +36,7 @@ class ControllerNode(Node):
             "yellow_detected": False
         }
         self._stop_line_detected = False
+        self._stop_line_detected_time = None
         self._line_is_lost = False
 
         self._angular_velocity = 0.0
@@ -75,6 +76,7 @@ class ControllerNode(Node):
         self.declare_parameter('linear_velocity_30', 0.5)
         self.declare_parameter('angular_velocity_max', 2.0)
         self.declare_parameter('startup_delay', 5.0)
+        self.declare_parameter('stop_line_timeout', 2.0)
         
         self._linear_velocity_50 = self.get_parameter('linear_velocity_50').value
         self._linear_velocity_30 = self.get_parameter('linear_velocity_30').value
@@ -120,6 +122,7 @@ class ControllerNode(Node):
     def _stop_line_callback(self, msg):
         """Handle stop line detection."""
         self._stop_line_detected = msg.data
+        self._stop_line_detected_time = self.get_clock().now().nanoseconds
         
         if not self._stop_line_detected:
             return
@@ -136,6 +139,19 @@ class ControllerNode(Node):
         
         if self._line_is_lost:
             self.stop()
+    
+    def _check_ignore_light_speed(self):
+        """
+        Check if the speed change from a traffic light should be ignored.
+        This is the case when the robot reads the sign after the stop line.
+        The robot should not stop or decellerate at this point if it is already past the line for more than 2 seconds.
+        """
+        if self._stop_line_detected_time is not None:
+            delta_time = self.get_clock().now().nanoseconds - self._stop_line_detected_time
+            if delta_time > self.get_parameter('stop_line_timeout').value * 1e9:
+                self._current_linear_velocity = self._green_linear_velocity
+                return True
+        return False
     
     def _traffic_detection_callback(self, msg):
         """Process traffic sign/light detection."""
@@ -157,12 +173,14 @@ class ControllerNode(Node):
             self.get_logger().info("Speed limit 50 detected")
             
         elif sign == TrafficSign.LIGHT_RED.value:
-            self._current_linear_velocity = self._linear_velocity_30
+            if not self._check_ignore_light_speed():
+                self._current_linear_velocity = self._linear_velocity_30
             self._traffic_light_state["red_detected"] = True
             self.get_logger().info("Red light detected")
             
         elif sign == TrafficSign.LIGHT_YELLOW.value:
-            self._current_linear_velocity = self._linear_velocity_30
+            if not self._check_ignore_light_speed():
+                            self._current_linear_velocity = self._linear_velocity_30
             self._traffic_light_state["yellow_detected"] = True
             self.get_logger().info("Yellow light detected")
             

@@ -75,7 +75,6 @@ class TrafficDetectorNode(Node):
         self.declare_parameter('max_threshold', 150)
         self.declare_parameter('threshold_step', 20)
         self.declare_parameter('min_detection_confidence', 10)
-        self.declare_parameter('marker_stability_threshold', 5)
 
     def _setup_communication(self):
         """Set up ROS publishers and subscribers."""
