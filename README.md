@@ -2,8 +2,6 @@
 
 ## 📃 Introduction
 
-## Introduction
-
 ATLAS (Autonomous Traffic Light And Sign System) is a ROS 2 framework for autonomous robot navigation with built-in traffic sign and signal recognition. It combines vision-based line following with PID control and ArUco marker detection for precise, responsive path tracking. Modular ROS 2 nodes manage perception, decision-making, and control, enabling reliable navigation in structured environments.  
 
 ## ⚙️ Installation, Build & Run
