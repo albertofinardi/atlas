@@ -387,6 +387,26 @@ Tests of the complete integrated system revealed:
 \subsection{Edge Cases and Robustness Analysis}
 The system successfully handled edge cases including simultaneous traffic signs, rapid traffic light changes, line interruptions, and sharp turns.
 
+\subsection{Edge Cases and Robustness Analysis}
+The system successfully handled edge cases including simultaneous traffic signs, rapid traffic light changes, line interruptions, and sharp turns.
+
+\subsection{Video Demonstrations}
+Comprehensive video demonstrations of the ATLAS system capabilities are provided in the \texttt{media} folder, showcasing various operational scenarios and parameter sensitivity analysis:
+
+\begin{itemize}
+    \item \textbf{traffic\_light}: Demonstrates the robot's behavior when encountering traffic lights, showing the complete sequence from red light detection (causing the robot to stop at the stop line) through to green light detection (resuming normal operation).
+    
+    \item \textbf{pid\_params}: Illustrates the impact of different PID parameter configurations on line-following performance, highlighting the trade-offs between responsiveness and stability discussed in the parameter analysis.
+    
+    \item \textbf{confidence}: Shows the effect of modifying the confidence threshold parameter in the Traffic Detection Node. Lower confidence values result in more reactive behavior but increased susceptibility to false positive detections.
+    
+    \item \textbf{angular\_velocity}: Demonstrates the consequences of setting maximum angular velocity too low relative to linear velocity. The constrained turning capability results in turn radii that are too large to successfully navigate tight curves at the given speed. The robot successfully stops after losing line tracking for more than the configured timeout period.
+    
+    \item \textbf{linear\_velocity}: Exhibits the effect of excessive linear velocity relative to maximum angular velocity. The high forward speed creates turn radius requirements that exceed the robot's steering capabilities, leading to path deviation and potential navigation failure. The robot successfully stops after losing line tracking for more than the configured timeout period.
+\end{itemize}
+
+These demonstrations validate the theoretical parameter sensitivity analysis presented in the implementation sections and provide practical insights into the system's operational envelope and tuning requirements.
+
 \section{Discussion}
 
 \subsection{Integration of Multiple Perception Sources}
@@ -437,4 +457,5 @@ The modular architecture provides a foundation that could be extended in several
 
 The current implementation, complete with the Robomaster S1 model with custom vision sensors, ArUco-based traffic signs, and test circuit, provides a great foundation for extension of this autonomous navigation systems. The included test scene allows for comprehensive validation of all system components under controlled conditions, while the modular architecture enables incremental improvements and extensions without requiring a complete redesign.
 
+Code is available on GitHub at \url{https://github.com/albertofinardi/atlas}.
 \end{document}

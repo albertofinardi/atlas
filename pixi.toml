@@ -1,7 +1,7 @@
 [workspace]
-authors = ["Elia Cereda <eliacereda@gmail.com>"]
+authors = ["Alberto Finardi <finara@usi.ch>"]
 channels = ["robostack-staging", "conda-forge"]
-name = "robotics-lab-usi-robomaster"
+name = "atlas"
 platforms = ["linux-64", "osx-64", "osx-arm64"]
 version = "0.1.0"
 

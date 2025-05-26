@@ -21,7 +21,7 @@ setup(
     zip_safe=True,
     maintainer='albertofinardi',
     maintainer_email='finara@usi.ch',
-    description='TODO: Package description',
+    description='ATLAS package',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
