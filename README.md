@@ -38,10 +38,11 @@ atlas/
 ### Installation
 
 This project uses Pixi for dependency management.
+If on MacOS, use `setup.sh` instead of `setup.bash`.
 
 1. **Install dependencies**:
 ```bash
-pixi install
+pixi shell
 ```
 
 **Note**: If you get a file thread error, allow the system to open more files simultaneously in this terminal using:
@@ -53,6 +54,7 @@ ulimit -n 4096
 ```bash
 colcon build --symlink-install
 ```
+We found some issues while running this command with the drivers, so a second run is suggested.
 
 3. **Source the workspace**:
 ```bash
@@ -182,7 +184,7 @@ The vision system is implemented in CoppeliaSim using Lua scripts:
 
 ### Visualization Tools
 
-When running in debug mode, you can monitor the system using RQT.
+When running in debug mode, you can monitor the system using RQT. Couple perspectives are provided in the `rqt` folder.
 
 ## Important Notes
 
